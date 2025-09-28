@@ -18,7 +18,7 @@ function App() {
       alert('Error parsing EPS data. Please check the file format.');
     }
   };
-
+    
   const handleLoadSample = () => {
     const parsedData = FHIRParser.parseEPS(sampleEPSBundle);
     setEpsData(parsedData);
